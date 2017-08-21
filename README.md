@@ -2,6 +2,9 @@
 
 A collection of libraries and tools in Node.js for SharePoint.
 
+### Have an interesting idea for a new Node.js module\tool\library\whatever? 
+Suggest it under issues.
+
 ## Uncategorized list (just alphabetic order)
 
 - [generator-sppp](https://github.com/koltyakov/generator-sppp) - SP Pull-n-Push - Yeoman generator for SharePoint client-side applications
