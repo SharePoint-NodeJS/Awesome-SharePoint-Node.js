@@ -1,6 +1,6 @@
 # Awesome SharePoint Node.js [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/sharepoint-node/Lobby)
 
-> A collection of packages, libraries and tools in Node.js for usage with SharePoint and related technologies.
+> A collection of packages, libraries and tools for Node.js runtime dealing with SharePoint and related technologies.
 
 Inspired by modern development, Node.js, SharePoint and awesome-* lists.
 
@@ -24,6 +24,7 @@ Suggest it under the issues section.
 
 | Package | | Description |
 | --------- | --- | --------- |
+| [adal-node](https://github.com/AzureAD/azure-activedirectory-library-for-nodejs) | [![npm](https://img.shields.io/npm/v/adal-node.svg)](https://www.npmjs.com/package/adal-node) [![npm](https://img.shields.io/npm/dm/adal-node.svg)](https://www.npmjs.com/package/adal-node) | Windows Azure Active Directory Authentication Library (ADAL) for Node.js |
 | [node-sp-auth](https://github.com/s-KaiNet/node-sp-auth) | [![npm](https://img.shields.io/npm/v/node-sp-auth.svg)](https://www.npmjs.com/package/node-sp-auth) [![npm](https://img.shields.io/npm/dm/node-sp-auth.svg)](https://www.npmjs.com/package/node-sp-auth) | Unattended SharePoint http authentication with nodejs |
 | [sp-request](https://github.com/s-KaiNet/sp-request) | [![npm](https://img.shields.io/npm/v/sp-request.svg)](https://www.npmjs.com/package/sp-request) [![npm](https://img.shields.io/npm/dm/sp-request.svg)](https://www.npmjs.com/package/sp-request) | Simplified SharePoint HTTP client |
 | [sp-rest-proxy](https://github.com/koltyakov/sp-rest-proxy) | [![npm](https://img.shields.io/npm/v/sp-rest-proxy.svg)](https://www.npmjs.com/package/sp-rest-proxy) [![npm](https://img.shields.io/npm/dm/sp-rest-proxy.svg)](https://www.npmjs.com/package/sp-rest-proxy) | SharePoint REST API Proxy for Node.js and Express local serve |
