@@ -35,6 +35,7 @@
         "description": "A Node.js SharePoint Client inherited from sharepointer.",
         "categories": [ 0 ]
     }, {
+        "package": "sp-pnp-js",
         "name": "PnP-JS-Core",
         "url": "https://github.com/SharePoint/PnP-JS-Core",
         "description": "PnP JavaScript Core component, a fluent API for working with the full SharePoint REST API as well as utility and helper functions. See [node-pnp-js](https://github.com/s-KaiNet/node-pnp-js) or [sp-pnp-node](https://github.com/koltyakov/sp-pnp-node) for Node.JS integration.",
@@ -120,6 +121,7 @@
         "description": "Convert a sharepoint wiki library into a DOCX file.",
         "categories": [ 3 ]
     }, {
+        "package": "@beyond-sharepoint/spo-shell",
         "name": "spo-shell",
         "url": "https://github.com/beyond-sharepoint/spo-shell",
         "description": "A cross-platform implementation of SharePoint shell commands written in straight ES6. No powershell cmdlets and confusing PnP installs.",
@@ -130,6 +132,7 @@
         "description": "[Passport.js](http://passportjs.org/) authentication middleware for SharePoint add-in.",
         "categories": [ 4 ]
     }, {
+        "noBadges": true,
         "name": "expressjs-sp-addin",
         "url": "https://github.com/s-KaiNet/expressjs-sp-addin",
         "description": "Sample SharePoint provider-hosted add-in with Express.js, [passport-sharepoint-addin](https://github.com/s-KaiNet/passport-sharepoint-addin) and PnP-JS-Core.",
