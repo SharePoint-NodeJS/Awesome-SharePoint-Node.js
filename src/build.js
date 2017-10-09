@@ -12,7 +12,7 @@ class Awesome {
     }
 
     mdUrl(paragraph) {
-        return [ '&', '.', ',' ].reduce((res, sym) => {
+        return '#' + [ '&', '.', ',' ].reduce((res, sym) => {
             let reg = new RegExp(`\\${sym}`, 'g');
             return res.replace(reg, '');
         }, paragraph)
@@ -70,6 +70,11 @@ class Awesome {
                 ${
                     this.data.libs
                         .filter(lib => lib.categories.indexOf(index) !== -1)
+                        .sort((a, b) => {
+                            var x = (a.package || a.name).toLowerCase();
+                            var y = (b.package || b.name).toLowerCase();
+                            return x < y ? -1 : x > y ? 1 : 0;
+                        })
                         .map(lib => {
                             return this.templateTableRow(lib);
                         }).join('\n')

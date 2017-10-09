@@ -115,6 +115,11 @@
         "description": "Office 365 shell command utilities.",
         "categories": [ 3 ]
     }, {
+        "name": "sprestlib",
+        "url": "https://www.npmjs.com/package/sp-wiki-to-docx",
+        "description": "Convert a sharepoint wiki library into a DOCX file.",
+        "categories": [ 3 ]
+    }, {
         "name": "spo-shell",
         "url": "https://github.com/beyond-sharepoint/spo-shell",
         "description": "A cross-platform implementation of SharePoint shell commands written in straight ES6. No powershell cmdlets and confusing PnP installs.",
@@ -143,7 +148,7 @@
         "name": "sp-download",
         "url": "https://github.com/koltyakov/sp-download",
         "description": "SharePoint files download client (library and CLI) in Node.js.",
-        "categories": [ 5 ]
+        "categories": [ 3, 5 ]
     }, {
         "name": "sppull",
         "url": "https://github.com/koltyakov/sppull",

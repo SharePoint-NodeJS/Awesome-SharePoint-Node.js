@@ -13,4 +13,4 @@ Suggest it under the issues section.
 
 {{CONTENT}}
 
-[_this is not a complete list, just a draft_, we're [collecting](https://github.com/SharePoint-NodeJS/Awesome-SharePoint-Node.js/issues/1) some other great libraries and tools to mention too]
+[Libraries in categories are sorted in alphabetical order.]
