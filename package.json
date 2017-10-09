@@ -1,0 +1,21 @@
+{
+  "name": "awesome-sharePoint-nodejs",
+  "version": "1.0.0",
+  "description": "A collection of packages, libraries and tools for Node.js runtime dealing with SharePoint and related technologies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./src/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koltyakov/Awesome-SharePoint-Node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koltyakov/Awesome-SharePoint-Node.js/issues"
+  },
+  "homepage": "https://github.com/koltyakov/Awesome-SharePoint-Node.js#readme"
+}
