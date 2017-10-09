@@ -42,9 +42,11 @@ class Awesome {
         let packageName = data.package || data.name;
         return this.trim(`
             | [${data.name}](${data.url}) |
-                [![npm](https://img.shields.io/npm/v/${packageName}.svg)](https://www.npmjs.com/package/${packageName})
-                [![npm](https://img.shields.io/npm/dm/${packageName}.svg)](https://www.npmjs.com/package/${packageName})
-                [![npm](https://img.shields.io/npm/dt/${packageName}.svg)](https://www.npmjs.com/package/${packageName})
+                ${!data.noBadges ? `
+                    [![npm](https://img.shields.io/npm/v/${packageName}.svg)](https://www.npmjs.com/package/${packageName})
+                    [![npm](https://img.shields.io/npm/dm/${packageName}.svg)](https://www.npmjs.com/package/${packageName})
+                    [![npm](https://img.shields.io/npm/dt/${packageName}.svg)](https://www.npmjs.com/package/${packageName})
+                ` : ''}
             | ${data.description} |
         `, ' ');
     }
