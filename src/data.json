@@ -244,5 +244,11 @@
     "url": "https://www.npmjs.com/package/@pnp/office365-cli",
     "description": "The Office 365 CLI allows you to manage different settings of your Microsoft Office 365 tenant on any platform.",
     "categories": [3]
+  },
+  {
+    "name": "node-sp-alm",
+    "url": "https://www.npmjs.com/package/node-sp-alm",
+    "description": "Module created for automating the deployment process of SharePoint solution packages to the App Catalog. This module uses the new ALM APIs that are available on SharePoint Online tenants.",
+    "categories": [2]
   }]
 }
