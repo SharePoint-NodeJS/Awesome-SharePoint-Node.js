@@ -1,5 +1,5 @@
 {
-  "name": "awesome-sharePoint-nodejs",
+  "name": "awesome-sharepoint-nodejs",
   "version": "1.0.0",
   "description": "A collection of packages, libraries and tools for Node.js runtime dealing with SharePoint and related technologies.",
   "main": "index.js",
