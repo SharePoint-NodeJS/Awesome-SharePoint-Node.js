@@ -1,3 +1,5 @@
+//@ts-check
+
 const path = require('path');
 const fs = require('fs');
 
@@ -22,13 +24,33 @@ class Awesome {
 
   templateToc(categories) {
     return this.trim(`
-        **Table of Contents**
+        ## Table of Contents\n
         ${categories.map(category => {
           return this.trim(`
               - [${category}](${this.mdUrl(category)})
           `);
         }).join('\n')}
     `);
+  }
+
+  templateContent(categories) {
+    return this.trim(categories.map((category, index) => {
+      return `## ${category}\n\n` + this.trim(`
+        ${this.templateHeader()}
+        ${
+          this.data.libs
+            .filter(lib => lib.categories.indexOf(index) !== -1)
+            .sort((a, b) => {
+              var x = (a.package || a.name).toLowerCase();
+              var y = (b.package || b.name).toLowerCase();
+              return x < y ? -1 : x > y ? 1 : 0;
+            })
+            .map(lib => {
+              return this.templateTableRow(lib);
+            }).join('\n')
+        }
+      `) + '\n';
+    }).join('\n'));
   }
 
   templateHeader() {
@@ -66,23 +88,7 @@ class Awesome {
 
   build() {
     let toc = this.templateToc(this.data.categories);
-    let content = this.data.categories.map((category, index) => {
-      return `## ${category}\n\n` + this.trim(`
-        ${this.templateHeader()}
-        ${
-          this.data.libs
-            .filter(lib => lib.categories.indexOf(index) !== -1)
-            .sort((a, b) => {
-              var x = (a.package || a.name).toLowerCase();
-              var y = (b.package || b.name).toLowerCase();
-              return x < y ? -1 : x > y ? 1 : 0;
-            })
-            .map(lib => {
-              return this.templateTableRow(lib);
-            }).join('\n')
-        }
-      `) + '\n\n';
-    }).join('\n');
+    let content = this.templateContent(this.data.categories);
     this.buildReadme(toc, content);
   }
 

@@ -6,7 +6,8 @@ Inspired by modern development, Node.js, SharePoint and awesome-* lists.
 
 **Contributions are welcome!** If you are an author or a user of any cool Node.js package related to SharePoint or Office 365, please let us know about your tool of choice to add it to the list.
 
-### Have an interesting idea for a new Node.js module, tool, library or whatever?
+## Have an interesting idea for a new Node.js module, tool, library or whatever?
+
 Suggest it under the issues section.
 
 {{TOC}}

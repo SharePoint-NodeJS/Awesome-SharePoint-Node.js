@@ -6,10 +6,12 @@ Inspired by modern development, Node.js, SharePoint and awesome-* lists.
 
 **Contributions are welcome!** If you are an author or a user of any cool Node.js package related to SharePoint or Office 365, please let us know about your tool of choice to add it to the list.
 
-### Have an interesting idea for a new Node.js module, tool, library or whatever?
+## Have an interesting idea for a new Node.js module, tool, library or whatever?
+
 Suggest it under the issues section.
 
-**Table of Contents**
+## Table of Contents
+
 - [Authentication & Http](#authentication--http)
 - [Client libraries for browser, which work in Node.JS](#client-libraries-for-browser-which-work-in-nodejs)
 - [SPFx related](#spfx-related)
@@ -29,7 +31,6 @@ Suggest it under the issues section.
 | [sp-request](https://github.com/s-KaiNet/sp-request) |  [![npm](https://img.shields.io/npm/v/sp-request.svg)](https://www.npmjs.com/package/sp-request) [![npm](https://img.shields.io/npm/dm/sp-request.svg)](https://www.npmjs.com/package/sp-request) [![npm](https://img.shields.io/npm/dt/sp-request.svg)](https://www.npmjs.com/package/sp-request)  | Simplified SharePoint HTTP client. |
 | [sp-rest-proxy](https://github.com/koltyakov/sp-rest-proxy) |  [![npm](https://img.shields.io/npm/v/sp-rest-proxy.svg)](https://www.npmjs.com/package/sp-rest-proxy) [![npm](https://img.shields.io/npm/dm/sp-rest-proxy.svg)](https://www.npmjs.com/package/sp-rest-proxy) [![npm](https://img.shields.io/npm/dt/sp-rest-proxy.svg)](https://www.npmjs.com/package/sp-rest-proxy)  | SharePoint REST API Proxy for Node.js and Express local serve. |
 
-
 ## Client libraries for browser, which work in Node.JS
 
 | Package | | Description |
@@ -40,16 +41,15 @@ Suggest it under the issues section.
 | [sprestlib](https://gitbrent.github.io/SpRestLib) |  [![npm](https://img.shields.io/npm/v/sprestlib.svg)](https://www.npmjs.com/package/sprestlib) [![npm](https://img.shields.io/npm/dm/sprestlib.svg)](https://www.npmjs.com/package/sprestlib) [![npm](https://img.shields.io/npm/dt/sprestlib.svg)](https://www.npmjs.com/package/sprestlib)  | SharePoint REST Library: JavaScript Library for SharePoint Web Services. |
 | [spscript](https://github.com/DroopyTersen/spscript) |  [![npm](https://img.shields.io/npm/v/spscript.svg)](https://www.npmjs.com/package/spscript) [![npm](https://img.shields.io/npm/dm/spscript.svg)](https://www.npmjs.com/package/spscript) [![npm](https://img.shields.io/npm/dt/spscript.svg)](https://www.npmjs.com/package/spscript)  | SPScript makes it easy to code against SharePoint 2013 Rest API. |
 
-
 ## SPFx related
 
 | Package | | Description |
 | ------- | --- | ------- |
 | [node-sppkg-deploy](https://github.com/estruyf/node-sppkg-deploy) |  [![npm](https://img.shields.io/npm/v/node-sppkg-deploy.svg)](https://www.npmjs.com/package/node-sppkg-deploy) [![npm](https://img.shields.io/npm/dm/node-sppkg-deploy.svg)](https://www.npmjs.com/package/node-sppkg-deploy) [![npm](https://img.shields.io/npm/dt/node-sppkg-deploy.svg)](https://www.npmjs.com/package/node-sppkg-deploy)  | SharePoint APP Package Deployment. |
+| [sp-rest-proxy](https://github.com/koltyakov/sp-rest-proxy) |  [![npm](https://img.shields.io/npm/v/sp-rest-proxy.svg)](https://www.npmjs.com/package/sp-rest-proxy) [![npm](https://img.shields.io/npm/dm/sp-rest-proxy.svg)](https://www.npmjs.com/package/sp-rest-proxy) [![npm](https://img.shields.io/npm/dt/sp-rest-proxy.svg)](https://www.npmjs.com/package/sp-rest-proxy)  | SharePoint REST API Proxy for Node.js and Express local serve. |
 | [sp-workbench-api-proxy](https://github.com/valorekhov/sp-workbench-api-proxy) |  [![npm](https://img.shields.io/npm/v/sp-workbench-api-proxy.svg)](https://www.npmjs.com/package/sp-workbench-api-proxy) [![npm](https://img.shields.io/npm/dm/sp-workbench-api-proxy.svg)](https://www.npmjs.com/package/sp-workbench-api-proxy) [![npm](https://img.shields.io/npm/dt/sp-workbench-api-proxy.svg)](https://www.npmjs.com/package/sp-workbench-api-proxy)  | Provides an authenticated proxy to Office 365 + SharePoint Online or an on-prem SharePoint installation. Use as a part of development with SpFx Workbench or a custom toolchain. |
 | [spfx-build-url-rewrite](https://www.npmjs.com/package/spfx-build-url-rewrite) |  [![npm](https://img.shields.io/npm/v/spfx-build-url-rewrite.svg)](https://www.npmjs.com/package/spfx-build-url-rewrite) [![npm](https://img.shields.io/npm/dm/spfx-build-url-rewrite.svg)](https://www.npmjs.com/package/spfx-build-url-rewrite) [![npm](https://img.shields.io/npm/dt/spfx-build-url-rewrite.svg)](https://www.npmjs.com/package/spfx-build-url-rewrite)  | SharePoint Framework build tool that automatically re-writes URL's in the manifest. |
 | [spfx-extensions-cli](https://github.com/vman/spfx-extensions-cli) |  [![npm](https://img.shields.io/npm/v/spfx-extensions-cli.svg)](https://www.npmjs.com/package/spfx-extensions-cli) [![npm](https://img.shields.io/npm/dm/spfx-extensions-cli.svg)](https://www.npmjs.com/package/spfx-extensions-cli) [![npm](https://img.shields.io/npm/dt/spfx-extensions-cli.svg)](https://www.npmjs.com/package/spfx-extensions-cli)  | CLI tool to manage SharePoint Framework extensions. |
-
 
 ## Tools & CLIs
 
@@ -67,7 +67,6 @@ Suggest it under the issues section.
 | [sphooks](https://github.com/s-KaiNet/sphooks) |  [![npm](https://img.shields.io/npm/v/sphooks.svg)](https://www.npmjs.com/package/sphooks) [![npm](https://img.shields.io/npm/dm/sphooks.svg)](https://www.npmjs.com/package/sphooks) [![npm](https://img.shields.io/npm/dt/sphooks.svg)](https://www.npmjs.com/package/sphooks)  | Cross-platform CLI for managing SharePoint list web hooks. |
 | [sprestlib](https://www.npmjs.com/package/sp-wiki-to-docx) |  [![npm](https://img.shields.io/npm/v/sprestlib.svg)](https://www.npmjs.com/package/sprestlib) [![npm](https://img.shields.io/npm/dm/sprestlib.svg)](https://www.npmjs.com/package/sprestlib) [![npm](https://img.shields.io/npm/dt/sprestlib.svg)](https://www.npmjs.com/package/sprestlib)  | Convert a sharepoint wiki library into a DOCX file. |
 
-
 ## Web applications
 
 | Package | | Description |
@@ -75,7 +74,6 @@ Suggest it under the issues section.
 | [expressjs-sp-addin](https://github.com/s-KaiNet/expressjs-sp-addin) |  | Sample SharePoint provider-hosted add-in with Express.js, [passport-sharepoint-addin](https://github.com/s-KaiNet/passport-sharepoint-addin) and PnP-JS-Core. |
 | [passport-sharepoint](https://github.com/QuePort/passport-sharepoint) |  [![npm](https://img.shields.io/npm/v/passport-sharepoint.svg)](https://www.npmjs.com/package/passport-sharepoint) [![npm](https://img.shields.io/npm/dm/passport-sharepoint.svg)](https://www.npmjs.com/package/passport-sharepoint) [![npm](https://img.shields.io/npm/dt/passport-sharepoint.svg)](https://www.npmjs.com/package/passport-sharepoint)  | SharePoint authentication strategy for Passport and Node.js. |
 | [passport-sharepoint-addin](https://github.com/s-KaiNet/passport-sharepoint-addin) |  [![npm](https://img.shields.io/npm/v/passport-sharepoint-addin.svg)](https://www.npmjs.com/package/passport-sharepoint-addin) [![npm](https://img.shields.io/npm/dm/passport-sharepoint-addin.svg)](https://www.npmjs.com/package/passport-sharepoint-addin) [![npm](https://img.shields.io/npm/dt/passport-sharepoint-addin.svg)](https://www.npmjs.com/package/passport-sharepoint-addin)  | [Passport.js](http://passportjs.org/) authentication middleware for SharePoint add-in. |
-
 
 ## Working with files
 
@@ -92,7 +90,6 @@ Suggest it under the issues section.
 | [spsave](https://github.com/s-KaiNet/spsave) |  [![npm](https://img.shields.io/npm/v/spsave.svg)](https://www.npmjs.com/package/spsave) [![npm](https://img.shields.io/npm/dm/spsave.svg)](https://www.npmjs.com/package/spsave) [![npm](https://img.shields.io/npm/dt/spsave.svg)](https://www.npmjs.com/package/spsave)  | Save files in SharePoint using node.js easily. |
 | [spsave-webpack-plugin](https://github.com/yohanb/spsave-webpack-plugin) |  [![npm](https://img.shields.io/npm/v/spsave-webpack-plugin.svg)](https://www.npmjs.com/package/spsave-webpack-plugin) [![npm](https://img.shields.io/npm/dm/spsave-webpack-plugin.svg)](https://www.npmjs.com/package/spsave-webpack-plugin) [![npm](https://img.shields.io/npm/dt/spsave-webpack-plugin.svg)](https://www.npmjs.com/package/spsave-webpack-plugin)  | A Webpack plugin that allows you upload generated assets to a SharePoint site. |
 
-
 ## Wrapper or helper libraries
 
 | Package | | Description |
@@ -103,7 +100,6 @@ Suggest it under the issues section.
 | [sp-pnp-node](https://github.com/koltyakov/sp-pnp-node) |  [![npm](https://img.shields.io/npm/v/sp-pnp-node.svg)](https://www.npmjs.com/package/sp-pnp-node) [![npm](https://img.shields.io/npm/dm/sp-pnp-node.svg)](https://www.npmjs.com/package/sp-pnp-node) [![npm](https://img.shields.io/npm/dt/sp-pnp-node.svg)](https://www.npmjs.com/package/sp-pnp-node)  | SharePoint JavaScript Core Library wrapper helper for Node.js. |
 | [sp-screwdriver](https://github.com/koltyakov/sp-screwdriver) |  [![npm](https://img.shields.io/npm/v/sp-screwdriver.svg)](https://www.npmjs.com/package/sp-screwdriver) [![npm](https://img.shields.io/npm/dm/sp-screwdriver.svg)](https://www.npmjs.com/package/sp-screwdriver) [![npm](https://img.shields.io/npm/dt/sp-screwdriver.svg)](https://www.npmjs.com/package/sp-screwdriver)  | Adds missing and abstracts SharePoint APIs for transparent usage in Node.js applications. |
 
-
 ## Yeoman generators
 
 | Package | | Description |
@@ -112,7 +108,5 @@ Suggest it under the issues section.
 | [generator-portals-clientside](https://www.npmjs.com/package/generator-portals-clientside) |  [![npm](https://img.shields.io/npm/v/generator-portals-clientside.svg)](https://www.npmjs.com/package/generator-portals-clientside) [![npm](https://img.shields.io/npm/dm/generator-portals-clientside.svg)](https://www.npmjs.com/package/generator-portals-clientside) [![npm](https://img.shields.io/npm/dt/generator-portals-clientside.svg)](https://www.npmjs.com/package/generator-portals-clientside)  | Scaffold out your clientside sharepoint projects. It has sub-generators for components, list exports, and CSR fields. |
 | [generator-spcaf](https://github.com/rencoreab/generator-spcaf) |  [![npm](https://img.shields.io/npm/v/generator-spcaf.svg)](https://www.npmjs.com/package/generator-spcaf) [![npm](https://img.shields.io/npm/dm/generator-spcaf.svg)](https://www.npmjs.com/package/generator-spcaf) [![npm](https://img.shields.io/npm/dt/generator-spcaf.svg)](https://www.npmjs.com/package/generator-spcaf)  | This generator makes it easier to run SPCAF analysis on SharePoint Framework projects. |
 | [generator-sppp](https://github.com/koltyakov/generator-sppp) |  [![npm](https://img.shields.io/npm/v/generator-sppp.svg)](https://www.npmjs.com/package/generator-sppp) [![npm](https://img.shields.io/npm/dm/generator-sppp.svg)](https://www.npmjs.com/package/generator-sppp) [![npm](https://img.shields.io/npm/dt/generator-sppp.svg)](https://www.npmjs.com/package/generator-sppp)  | SP Pull-n-Push - Yeoman generator for SharePoint client-side applications. |
-
-
 
 [Libraries in categories are sorted in alphabetical order.]
