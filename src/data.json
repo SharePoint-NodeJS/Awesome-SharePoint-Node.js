@@ -28,7 +28,7 @@
     "name": "sp-rest-proxy",
     "url": "https://github.com/koltyakov/sp-rest-proxy",
     "description": "SharePoint REST API Proxy for Node.js and Express local serve.",
-    "categories": [0]
+    "categories": [0, 2]
   }, {
     "name": "sharepointconnector",
     "url": "https://github.com/veeraRaghavSanthosh/sharepointconnector",
