@@ -250,5 +250,11 @@
     "url": "https://github.com/sprtus/engineer",
     "description": "A powerful command-line tool for configuring SharePoint site columns, content types, lists, views, and more...",
     "categories": [3]
+  },
+  {
+    "name": "node-sp-alm",
+    "url": "https://www.npmjs.com/package/node-sp-alm",
+    "description": "Module created for automating the deployment process of SharePoint solution packages to the App Catalog. This module uses the new ALM APIs that are available on SharePoint Online tenants.",
+    "categories": [2]
   }]
 }
