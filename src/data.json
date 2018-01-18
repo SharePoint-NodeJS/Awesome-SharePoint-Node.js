@@ -244,5 +244,11 @@
     "url": "https://www.npmjs.com/package/@pnp/office365-cli",
     "description": "The Office 365 CLI allows you to manage different settings of your Microsoft Office 365 tenant on any platform.",
     "categories": [3]
+  }, {
+    "package": "sp-engineer",
+    "name": "sp-engineer",
+    "url": "https://github.com/sprtus/engineer",
+    "description": "A powerful command-line tool for configuring SharePoint site columns, content types, lists, views, and more...",
+    "categories": [3]
   }]
 }
