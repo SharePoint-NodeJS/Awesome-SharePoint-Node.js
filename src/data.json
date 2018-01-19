@@ -27,7 +27,7 @@
   }, {
     "name": "sp-rest-proxy",
     "url": "https://github.com/koltyakov/sp-rest-proxy",
-    "description": "SharePoint REST API Proxy for Node.js and Express local serve.",
+    "description": "SharePoint REST API Proxy for local Front-end development tool-chains (SPA, webparts development, SPFx).",
     "categories": [0, 2]
   }, {
     "name": "sharepointconnector",
