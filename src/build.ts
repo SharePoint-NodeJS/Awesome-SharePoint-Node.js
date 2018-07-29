@@ -1,39 +1,44 @@
-//@ts-check
+import * as path from 'path';
+import * as fs from 'fs';
 
-const path = require('path');
-const fs = require('fs');
+import awesomeData from './data';
+import { IData, ILib } from './interfaces';
 
 class Awesome {
 
-  constructor() {
-    this.data = require(path.join(__dirname, 'data'));
+  constructor(private data: IData) {}
+
+  public build(): void {
+    const toc = this.templateToc(this.data.categories);
+    const content = this.templateContent(this.data.categories);
+    this.buildReadme(toc, content);
   }
 
-  trim(multistring, join) {
-    return multistring.trim().split('\n').map(line => line.trim()).join(join || '\n');
+  private trim(multistring: string, join = '\n'): string {
+    return multistring.trim().split('\n').map(line => line.trim()).join(join);
   }
 
-  mdUrl(paragraph) {
+  private mdUrl(paragraph: string): string {
     return '#' + ['&', '.', ','].reduce((res, sym) => {
-      let reg = new RegExp(`\\${sym}`, 'g');
+      const reg = new RegExp(`\\${sym}`, 'g');
       return res.replace(reg, '');
     }, paragraph)
       .replace(/ /g, '-')
       .toLowerCase();
   }
 
-  templateToc(categories) {
+  private templateToc(categories: string[]): string {
     return this.trim(`
-        ## Table of Contents\n
-        ${categories.map(category => {
-          return this.trim(`
-              - [${category}](${this.mdUrl(category)})
-          `);
-        }).join('\n')}
+      ## Table of Contents\n
+      ${categories.map(category => {
+        return this.trim(`
+          - [${category}](${this.mdUrl(category)})
+        `);
+      }).join('\n')}
     `);
   }
 
-  templateContent(categories) {
+  private templateContent(categories: string[]): string {
     return this.trim(categories.map((category, index) => {
       return `## ${category}\n\n` + this.trim(`
         ${this.templateHeader()}
@@ -41,8 +46,8 @@ class Awesome {
           this.data.libs
             .filter(lib => lib.categories.indexOf(index) !== -1)
             .sort((a, b) => {
-              var x = (a.package || a.name).toLowerCase();
-              var y = (b.package || b.name).toLowerCase();
+              const x = (a.package || a.name).toLowerCase();
+              const y = (b.package || b.name).toLowerCase();
               return x < y ? -1 : x > y ? 1 : 0;
             })
             .map(lib => {
@@ -53,18 +58,19 @@ class Awesome {
     }).join('\n'));
   }
 
-  templateHeader() {
+  private templateHeader(): string {
     return this.trim(`
       | Package | | Description |
       | ------- | --- | ------- |
     `);
   }
 
-  templateTableRow(data) {
-    let packageName = data.package || data.name;
+  private templateTableRow(data: ILib): string {
+    const packageName = data.package || data.name;
+    const noBadges = packageName === 'n/a' ? true : false;
     return this.trim(`
       | [${data.name}](${data.url}) |
-        ${!data.noBadges ? `
+        ${!noBadges ? `
           [![npm](https://img.shields.io/npm/v/${packageName}.svg)](https://www.npmjs.com/package/${packageName})
           [![npm](https://img.shields.io/npm/dm/${packageName}.svg)](https://www.npmjs.com/package/${packageName})
           [![npm](https://img.shields.io/npm/dt/${packageName}.svg)](https://www.npmjs.com/package/${packageName})
@@ -73,9 +79,9 @@ class Awesome {
     `, ' ');
   }
 
-  buildReadme(toc, content) {
-    let template = fs.readFileSync(path.join(__dirname, 'template.md')).toString();
-    let result = template
+  private buildReadme(toc: string, content: string): void {
+    const template = fs.readFileSync(path.join(__dirname, 'template.md')).toString();
+    const result = template
       .replace('{{TOC}}', toc)
       .replace('{{CONTENT}}', content);
     fs.writeFileSync(
@@ -86,12 +92,6 @@ class Awesome {
     );
   }
 
-  build() {
-    let toc = this.templateToc(this.data.categories);
-    let content = this.templateContent(this.data.categories);
-    this.buildReadme(toc, content);
-  }
-
 }
 
-(new Awesome()).build();
+(new Awesome(awesomeData)).build();
