@@ -265,10 +265,10 @@ const data: IData = {
     categories: [2]
   }, {
     package: 'sp-react-formfields',
-    name: 'sp-listform-react',
+    name: 'sp-listform-react, sp-react-formfields',
     url: 'https://github.com/olegrumiancev/sp-listform-react',
     description: 'Classic forms modernizer tool: Brings Office UI Fabric-based forms into SharePoint 2013/2016/Online. Is based on [sp-react-formfields](https://github.com/olegrumiancev/sp-react-formfields) and SPPP genarator.',
-    categories: [3]
+    categories: [3, 4]
   }]
 };
 
