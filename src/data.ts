@@ -65,7 +65,7 @@ const data: IData = {
     categories: [1]
   }, {
     name: 'gd-sprest',
-    url: 'https://gunjandatta.github.io/sprest',
+    url: 'https://gunjandatta.github.io',
     description: 'SharePoint REST Framework - an easy way to create, read, update and delete data using the SharePoint 2013, 2016 and SPO REST API.',
     categories: [1]
   }, {
